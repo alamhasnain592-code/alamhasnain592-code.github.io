@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web developer portfolio showcasing projects, skills, and contact information.">
+  <title>Web Developer | My Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #edf2ff;
+      line-height: 1.7;
+    }
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #263149;
+    }
+    .logo { color: #60a5fa; font-weight: bold; font-size: 22px; }
+    nav a {
+      color: #d6deef;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    nav a:hover { color: #60a5fa; }
+    .hero {
+      min-height: 65vh;
+      padding: 100px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .tag { color: #60a5fa; font-weight: bold; }
+    h1 { font-size: clamp(38px, 7vw, 68px); line-height: 1.15; margin: 18px 0; }
+    h1 span { color: #60a5fa; }
+    .hero p { max-width: 620px; color: #b8c4d9; }
+    .btn {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 12px 22px;
+      background: #3b82f6;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 65px 8%; }
+    h2 { font-size: 30px; margin-bottom: 22px; }
+    .muted { color: #b8c4d9; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      padding: 24px;
+      background: #131d31;
+      border: 1px solid #263149;
+      border-radius: 12px;
+    }
+    .card h3 { margin-bottom: 10px; color: #93c5fd; }
+    .skills { margin-top: 20px; color: #b8c4d9; }
+    footer {
+      text-align: center;
+      padding: 28px 8%;
+      border-top: 1px solid #263149;
+      color: #b8c4d9;
+    }
+    @media (max-width: 600px) {
+      header { align-items: flex-start; gap: 12px; flex-direction: column; }
+      nav a { margin: 0 12px 0 0; }
+      .hero { padding-top: 75px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MyPortfolio.</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="tag">WEB DEVELOPER PORTFOLIO</p>
+      <h1>Hello, I'm a<br><span>Web Developer.</span></h1>
+      <p>
+        I build clean, responsive websites and enjoy learning
+        new technologies. Explore my work and get in touch.
+      </p>
+      <a class="btn" href="#projects">Explore My Projects</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="muted">
+        I'm a web developer focused on creating useful and
+        user-friendly websites. I enjoy solving problems,
+        improving my coding skills, and building projects
+        that work well on mobile and desktop devices.
+      </p>
+      <p class="skills">
+        Skills: HTML · CSS · JavaScript · Responsive Design
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Portfolio Website</h3>
+          <p class="muted">A responsive website to introduce myself and showcase my skills.</p>
+        </article>
+        <article class="card">
+          <h3>Website Design</h3>
+          <p class="muted">A clean webpage concept focused on layout and user experience.</p>
+        </article>
+        <article class="card">
+          <h3>JavaScript Project</h3>
+          <p class="muted">An interactive project to practise JavaScript fundamentals.</p>
+        </article>
+      </div>
+      <p class="muted" style="margin-top:18px">
+        Replace these sample projects with your real work as you build it.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p class="muted">Have a project or opportunity in mind? Get in touch.</p>
+      <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email Me</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 MyPortfolio. Built with HTML and CSS.
+  </footer>
+</body>
+</html>
